@@ -1,0 +1,27 @@
+{
+    "version": "2.0.2",
+    "description": "Make DeepSeek V4 work flawlessly with Claude Code — Anthropic API compatibility proxy",
+    "homepage": "https://github.com/HosheaLi/dsv4-cc-proxy",
+    "license": "MIT",
+    "url": "https://github.com/HosheaLi/dsv4-cc-proxy/archive/refs/tags/v2.0.2.zip",
+    "extract_dir": "dsv4-cc-proxy-2.0.2",
+    "hash": "b5bb9d8014a0f9b1d61e21e796d78dccdf1352f23cd32812f4850b878ae4944c",
+    "pre_install": [
+        "$venv = \"$dir\\venv\"",
+        "python -m venv \"$venv\"",
+        "& \"$venv\\Scripts\\python\" -m pip install \"$dir\" --no-deps"
+    ],
+    "bin": [
+        [
+            "venv\\Scripts\\dsv4-cc-proxy.exe",
+            "dsv4-cc-proxy"
+        ]
+    ],
+    "checkver": {
+        "github": "https://github.com/HosheaLi/dsv4-cc-proxy"
+    },
+    "autoupdate": {
+        "url": "https://github.com/HosheaLi/dsv4-cc-proxy/archive/refs/tags/v$version.zip",
+        "extract_dir": "dsv4-cc-proxy-$version"
+    }
+}
