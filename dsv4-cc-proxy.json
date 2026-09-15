@@ -5,11 +5,11 @@
     "license": "MIT",
     "url": "https://github.com/HosheaLi/dsv4-cc-proxy/archive/refs/tags/v2.0.2.zip",
     "extract_dir": "dsv4-cc-proxy-2.0.2",
-    "hash": "b5bb9d8014a0f9b1d61e21e796d78dccdf1352f23cd32812f4850b878ae4944c",
+    "hash": "231249b5b72de0a2befb8ecac56a24dc8f9306ff0b45a14131ee0fd8a48044ef",
     "pre_install": [
         "$venv = \"$dir\\venv\"",
         "python -m venv \"$venv\"",
-        "& \"$venv\\Scripts\\python\" -m pip install \"$dir\" --no-deps"
+        "& \"$venv\\Scripts\\python\" -m pip install \"$dir\""
     ],
     "bin": [
         [
